@@ -21,6 +21,7 @@ pipeline {
                 pwd
                 hostname
                 '''
+                error 'error'
             }
         }
     }
