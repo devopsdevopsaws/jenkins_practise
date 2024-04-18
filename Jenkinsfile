@@ -8,12 +8,14 @@ pipeline {
             steps {
                 echo 'building'
                 sh 'ls -ltr'
+                echo '\033[34mHello\033[0m \033[33mcolorful\033[0m \033[35mworld!\033[0m'
             }
         }
         stage('Test') { 
             steps {
                 echo 'testing'
                 sh 'pwd'
+                echo '\033[34mHello\033[0m \033[33mcolorful\033[0m \033[35mworld!\033[0m'
             }
         }
         stage('Deploy') { 
@@ -24,7 +26,7 @@ pipeline {
                 pwd
                 hostname
                 '''
-                error 'error'
+                echo '\033[34mHello\033[0m \033[33mcolorful\033[0m \033[35mworld!\033[0m'
             }
         }
     }
