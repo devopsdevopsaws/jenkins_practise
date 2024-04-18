@@ -16,7 +16,11 @@ pipeline {
         stage('Deploy') { 
             steps {
                 echo 'deploying'
-                error 'failed'
+                sh '''
+                ls -ltr
+                pwd
+                hostname
+                '''
             }
         }
     }
